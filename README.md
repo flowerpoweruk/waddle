@@ -4,8 +4,6 @@
 
 Waddle is a Windows desktop workspace for understanding how a website appears in ordinary Google Search AI Overviews. It records search evidence, shows which pages and domains are cited, inventories the owner’s website, and turns observed opportunities into human-reviewable page briefs and tasks.
 
-![Waddle mascot](branding-pack/mascot/png/waddle-wave-low.png)
-
 ## What Waddle does
 
 ### Monitor search visibility
