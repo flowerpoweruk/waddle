@@ -4,8 +4,6 @@
 
 Waddle is a local desktop workspace for checking how your website appears in Google Search AI Overviews, exploring citation evidence, crawling your own pages, and turning evidence into page-improvement briefs and tasks.
 
-![Waddle mascot](branding-pack/mascot/png/waddle-wave-low.png)
-
 ## Features
 
 - Track search phrases and save AI Overview evidence and screenshots.
