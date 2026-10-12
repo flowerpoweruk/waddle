@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Waddle</title><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"><link rel="stylesheet" href="/style.css"></head>
+<body>
+<aside class="sidebar">
+  <button class="brand" data-view="dashboard"><img src="/assets/waddle-horizontal-colour.png" alt="Waddle" width="2061" height="763"></button>
+  <label class="workspace-label" for="project-select">Your workspace</label>
+  <select id="project-select"><option value="0">Select a project</option></select><p id="project-domain" class="project-domain"></p><button data-action="new-project" class="text-button project-new">New project</button>
+  <nav aria-label="Main navigation">
+    <div class="nav-group"><h2>Monitor</h2>
+      <button data-view="dashboard" class="nav active">Dashboard</button>
+      <button data-view="queries" class="nav">Queries</button>
+      <button data-view="pages" class="nav">Website pages</button>
+    </div>
+    <div class="nav-group"><h2>Investigate</h2>
+      <button data-view="opportunities" class="nav">Opportunities</button>
+      <button data-view="competitors" class="nav">Competitors</button>
+      <button data-view="sources" class="nav">Cited sources</button>
+    </div>
+    <div class="nav-group"><h2>Improve</h2>
+      <button data-view="improvements" class="nav">Page improvements</button>
+    </div>
+    <button data-view="settings" class="nav nav-settings">Settings</button>
+  </nav>
+  <div class="workspace"><span class="local-dot" aria-hidden="true"></span>Local workspace<p>Your saved workspace stays on this computer.</p></div>
+</aside>
+<div class="shell">
+  <main id="main" tabindex="-1"></main>
+  <footer><span id="saved">Local data saved</span><button id="save" class="text-button">Save now</button><span id="usage">0 / 500 requests this month</span></footer>
+</div>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="query-dialog" aria-labelledby="query-heading">
+ <form id="query-form">
+  <div class="dialog-heading"><h2 id="query-heading">Add queries</h2><button type="button" data-close="query-dialog" class="text-button">Close</button></div>
+  <label>Google search queries<textarea name="text" rows="8" required maxlength="100000" placeholder="One search phrase per line"></textarea></label>
+  <p class="muted">Paste one or several queries. Existing duplicates are skipped.</p>
+  <button type="submit" class="primary">Add queries</button>
+ </form>
+</dialog>
+<dialog id="page-dialog" aria-labelledby="page-heading"><div class="dialog-heading"><h2 id="page-heading">Page information</h2><button data-close="page-dialog" type="button">Close</button></div><div id="page-information"></div></dialog>
+<dialog id="retry-dialog" aria-labelledby="retry-heading"><div class="dialog-heading"><h2 id="retry-heading">Blocked / unavailable page retry</h2><button data-close="retry-dialog" type="button">Close</button></div><div id="retry-information"></div></dialog>
+<script src="/pages.js" defer></script>
+<script src="/strategy.js" defer></script>
+<script src="/improvements.js" defer></script>
+<script src="/onboarding.js" defer></script>
+<script src="/app.js" defer></script>
+</body></html>
